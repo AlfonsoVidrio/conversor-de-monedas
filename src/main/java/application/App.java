@@ -1,11 +1,14 @@
 package application;
 
-import io.github.cdimascio.dotenv.Dotenv;
+import models.ExchangeRateInfo;
+import services.ExchangeRateService;
 
 public class App {
     public static void main(String[] args) {
-        Dotenv dotenv = Dotenv.load();
-        String value = dotenv.get("MI_VARIABLE");
-        System.out.println("El valor de MI_VARIABLE es: " + value);
+        // Crea una instancia del servicio de tasa de cambio
+        ExchangeRateService exchangeRateService = new ExchangeRateService();
+        // Obtiene la información de la tasa de cambio
+        ExchangeRateInfo exchangeRateInfo = exchangeRateService.getExchangeRateInfo("USD", "MXN", "2");
+        System.out.println(exchangeRateInfo);
     }
 }
