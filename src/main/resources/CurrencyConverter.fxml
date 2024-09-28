@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="209.0" prefWidth="640.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CurrencyConverterController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f1f1f1" height="220.0" layoutX="-5.0" layoutY="-7.0" stroke="BLACK" strokeType="INSIDE" styleClass="background" width="646.0" />
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="640.0">
+         <children>
+            <Label fx:id="lbTitle" alignment="CENTER" contentDisplay="CENTER" styleClass="lb-title" text="Conversor de Monedas">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="25.0" />
+               </VBox.margin>
+            </Label>
+            <HBox alignment="CENTER" prefHeight="59.0" prefWidth="550.0">
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Label styleClass="lb-field" text="Cantidad" />
+                        <TextField fx:id="txtAmount" minHeight="30.0" minWidth="100.0">
+                           <VBox.margin>
+                              <Insets right="10.0" />
+                           </VBox.margin></TextField>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Label styleClass="lb-field" text="De:" />
+                        <ComboBox fx:id="cbxBaseCurrency" editable="true" minHeight="30.0" minWidth="220.0" onAction="#cbxBaseCurrencyEvent">
+                           <VBox.margin>
+                              <Insets right="10.0" />
+                           </VBox.margin></ComboBox>
+                     </children>
+                  </VBox>
+                  <Button fx:id="btnSwap" alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" minHeight="35.0" minWidth="35.0" mnemonicParsing="false" onAction="#btnSwapEvent" styleClass="btn-swap">
+                     <HBox.margin>
+                        <Insets right="10.0" top="10.0" />
+                     </HBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="22.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/swap.png" />
+                           </image></ImageView>
+                     </graphic>
+                  </Button>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Label styleClass="lb-field" text="a" />
+                        <ComboBox fx:id="cbxTargetCurrency" editable="true" minHeight="30.0" minWidth="220.0" onAction="#cbxTargetCurrencyEvent" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <Label fx:id="lbMessage" layoutX="10.0" layoutY="10.0" prefHeight="22.0" prefWidth="603.0" styleClass="lb-message" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbBaseToTarget" layoutX="28.0" layoutY="142.0" prefHeight="14.0" prefWidth="603.0" styleClass="base-to-target" textAlignment="CENTER">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbTargetToCode" layoutX="28.0" layoutY="177.0" prefHeight="14.0" prefWidth="603.0" styleClass="target-to-base" textAlignment="CENTER">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
