@@ -1,6 +1,6 @@
 # Conversor de Monedas
 
-Este proyecto es un challenge de conversión de monedas de ONE (Oracle Next Education). La aplicación permite convertir diferentes monedas utilizando la API de ExchangeRate-API para obtener los precios de cambio en tiempo real.
+Este proyecto es un desafío de conversión de monedas propuesto por ONE (Oracle Next Education). La aplicación permite a los usuarios convertir fácilmente entre diferentes divisas utilizando tasas de cambio en tiempo real proporcionadas por la API de ExchangeRate-API. Con una interfaz gráfica intuitiva, los usuarios pueden ingresar una cantidad, seleccionar la moneda base y la moneda objetivo, y ver instantáneamente el resultado de la conversión.
 
 <img src="screenshot.png" alt="Captura de Pantalla" width="600"/>
 
