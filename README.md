@@ -37,7 +37,15 @@ Asegúrate de tener instalado lo siguiente:
 
 3. **Selecciona el directorio del proyecto** que acabas de clonar y haz clic en "OK".
 
-4. **Configura JavaFX**:
+4. **Configura el archivo `.env`**:
+   - Renombra el archivo `.env-template` a `.env`.
+   - Abre el archivo `.env` y cambia el valor de la variable `API_KEY` con tu propia clave de API:
+     ```
+     API_KEY=your_api_key
+     ```
+   - Asegúrate de reemplazar `your_api_key` con la clave que obtuviste al registrarte en ExchangeRate-API.
+
+5. **Configura JavaFX**:
    - Ve a **Run > Edit Configurations**.
    - Selecciona la configuración de tu clase principal (RunApp).
    - Haz clic en "Modify options" y selecciona "Add VM options".
@@ -46,10 +54,10 @@ Asegúrate de tener instalado lo siguiente:
      --module-path "C:\path\javafx-sdk-23\lib" --add-modules javafx.controls,javafx.fxml
      ```
 
-5. **Ejecuta la aplicación**:
+6. **Ejecuta la aplicación**:
    - Haz clic derecho en la clase principal que contiene el método `main` y selecciona "Run".
 
-6. **Utiliza la interfaz gráfica** para seleccionar las monedas y realizar conversiones.
+7. **Utiliza la interfaz gráfica** para seleccionar las monedas y realizar conversiones.
 
   - Ingresa la cantidad que deseas convertir en el campo de texto.
   - Selecciona la moneda base utilizando el primer checkbox.
