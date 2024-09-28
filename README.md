@@ -5,7 +5,7 @@ Este proyecto es un desafío de conversión de monedas propuesto por ONE (Oracle
 <img src="screenshot.png" alt="Captura de Pantalla" width="600"/>
 
 
-## Tecnologías Utilizadas
+## Tecnologías y Enfoques Utilizados
 
 - **Java**: Lenguaje de programación principal.
 - **JavaFX**: Para crear la interfaz gráfica de usuario (GUI).
@@ -70,3 +70,6 @@ Asegúrate de tener instalado lo siguiente:
 Desarrollado por **Alfonso Manuel Vidrio Lizaola**.
 
 - **LinkedIn**: [Alfonso Manuel Vidrio Lizaola](https://www.linkedin.com/in/alfonsomanuelvidriolizaola/)
+
+## Insignia conversor de monedas
+<img src="Badge-Conversor.png" alt="Insignia conversor de monedasa" width="350"/>
