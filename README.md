@@ -2,6 +2,9 @@
 
 Este proyecto es un challenge de conversión de monedas de ONE (Oracle Next Education). La aplicación permite convertir diferentes monedas utilizando la API de ExchangeRate-API para obtener los precios de cambio en tiempo real.
 
+<img src="screenshot.png" alt="Captura de Pantalla" width="600"/>
+
+
 ## Tecnologías Utilizadas
 
 - **Java**: Lenguaje de programación principal.
