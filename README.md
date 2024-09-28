@@ -72,4 +72,4 @@ Desarrollado por **Alfonso Manuel Vidrio Lizaola**.
 - **LinkedIn**: [Alfonso Manuel Vidrio Lizaola](https://www.linkedin.com/in/alfonsomanuelvidriolizaola/)
 
 ## Insignia conversor de monedas
-<img src="Badge-Conversor.png" alt="Insignia conversor de monedasa" width="350"/>
+<img src="Badge-Conversor.png" alt="Insignia conversor de monedas" width="350"/>
